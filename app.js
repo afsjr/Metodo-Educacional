@@ -25,11 +25,11 @@ function pesquisar() {
         // Converte os dados relevantes para minúsculas para comparação insensível a maiúsculas/minúsculas
         let nome = dado.nome.toLowerCase();
         let descricao = dado.descricao.toLowerCase();
-        let paisDeOrigem = dado.paisDeOrigem.toLowerCase();
+        let paisOrigem = dado.paisOrigem.toLowerCase();
         let link = dado.link.toLowerCase();
 
         // Verifica se o termo de pesquisa está presente em qualquer um dos campos do dado
-        if (nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || paisDeOrigem.includes(campoPesquisa) || link.includes(campoPesquisa)) {
+        if (nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || paisOrigem.includes(campoPesquisa) || link.includes(campoPesquisa)) {
             // Se encontrado, adiciona o HTML formatado para o 'dado' à string 'resultados'
             resultados += `
                 <div class="item-resultado">
